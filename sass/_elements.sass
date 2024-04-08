@@ -1,0 +1,106 @@
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    border: none
+    outline: none
+
+body
+    min-height: 100vh
+    color: #000
+    font-size: 14px
+    background-color: #fff
+    color: #000
+    font-family: "Open Sans", sans-serif
+    font-optical-sizing: auto
+    font-weight: weight
+    font-style: normal
+    font-variation-settings: "wdth" 100
+
+    display: flex
+    flex-direction: column
+    scroll-behavior: smooth
+    position: relative
+    z-index: 1
+
+    &.is_active
+        overflow: hidden
+
+img
+    max-width: 100%
+
+.container
+    width: 100%
+    margin: 0 auto
+    max-width: 1120px
+    padding: 0 15px
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6
+    font-family: "Merriweather", serif
+
+h1, h2, .h1, .h2
+    font-size: 40px
+    font-weight: 500
+    margin: 0 0 40px
+
+.btn
+    display: block
+    padding: 15px 30px
+    width: 100%
+    background-color: #ff9893
+    color: white
+    border-radius: 8px 
+    font-size: 20px
+    font-weight: 500
+
+a,
+button
+    color: #000
+    text-decoration: none
+    transition: all ease .2s
+    background-color: transparent
+    &:active
+        transform: scale(.98)
+
+input:not([type="checkbox"]),
+input:not([type="radio"]),
+textarea
+    display: block
+    width: 100%
+    border: 1px solid rgba(0, 0, 0, .2)
+    padding: 0 20px
+    font-size: 16px
+    min-height: 50px
+    border-radius: 7px
+    margin-bottom: 15px
+
+.check
+    position: relative
+    z-index: 1
+    margin-bottom: 25px
+    input
+        width: 18px
+        height: 18px
+        position: absolute
+        top: 50%
+        left: 0
+        transform: translateY(-50%)
+
+    label
+        padding-left: 30px
+        display: block
+
+textarea
+    padding: 10px 20px
+    resize: none
+
+section
+    padding: 80px 0
+
+.fx, .fxw 
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.fxw 
+    flex-wrap: wrap
