@@ -4,11 +4,47 @@
 @import 'slick'
 @import 'footer'
 
-.main
+.classes
+    overflow: hidden
+    h2
+        margin-bottom: 50px
+
+    &-slide
+        width: 360px
+        padding: 18px 18px 24px
+        border: 1px solid rgba(0, 0, 0, .1)
+        border-radius: 26px
+        margin: 0 10px
+
+    .slick
+        &-list
+            padding: 0 40px 0 calc((100% - 1160px)/2)
+
+        &-prev
+            left: 40px
+
+        &-next
+            right: 40px
+
+    &__img
+        display: block
+        width: 100%
+        aspect-ratio: 16/12
+        object-fit: cover
+        margin: 0 0 20px
+        border-radius: 17px
+
+    &__heading
+        font-size: 20px
+        margin: 0 0 8px
+
+    &__text
+        font-size: 16px
+        margin: 0
 
 .why
     text-align: center
-    h2 
+    h2
         margin-bottom: 60px
     .fxw
         align-items: stretch
@@ -24,7 +60,8 @@
             margin: 0 auto 20px
             padding: 10px 10px
             border: 1px solid rgba(0, 0, 0, .1)
-            img 
+            transition: all ease .3s
+            img
                 display: block
                 width: 100%
                 height: 100%
@@ -33,9 +70,14 @@
 
         &__heading
             margin: 0 auto 5px
+
         &__text
             max-width: 88%
             margin: 0 auto
+
+        &:hover
+            .item-img
+                box-shadow: 0px 20px 40px 0px rgba(0,0,0,0.1)
 
 .partners
     h2
@@ -49,7 +91,7 @@
         text-align: center
         width: 31%
         aspect-ratio: 1/1
-        margin-bottom: 10px
+        margin-bottom: 20px
         background-color: #ffffff
         box-shadow: 0px 20px 50px 0px rgba(0,0,0,0.1)
         img

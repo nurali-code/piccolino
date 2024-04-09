@@ -1,3 +1,11 @@
+$('.classes-slider').slick({
+    infinite: false,
+    dots: true,
+    slidesToShow: 3,
+    swipeToSlide: true,
+    variableWidth: true,
+    slidesToScroll: 1
+});
 $('.reviews-slider').slick({
     infinite: true,
     dots: true,
