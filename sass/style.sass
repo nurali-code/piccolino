@@ -4,19 +4,70 @@
 @import 'slick'
 @import 'footer'
 
+.space
+    text-align: center
+    p
+        max-width: 800px
+        font-size: 16px
+        margin: 0 auto
+
+    .slick
+        &-arrow
+            top: 50%
+
+        &-prev
+            left: 10px
+
+        &-next
+            right: 10px
+
+        &-current
+
+    &-slide
+        margin: 20px 40px 0
+
+    &-slide, &-nav
+        display: none
+        &:first-child
+            display: inline-block
+
+        img
+            width: 100%
+            aspect-ratio: 16/11
+            object-fit: cover
+            display: block
+
+    &-slider
+        // max-width: 
+
+    &-navs
+        .slick
+            &-current
+                img
+                    border-color: #ff9893
+                    box-shadow: 0 0 20px 0 rgba(#ff9893, .6)
+    &-nav
+        // display: inline-block
+        margin: 20px 5px
+        cursor: pointer
+        img
+            width: 200px
+            transition: all ease .3s
+            border: 2px solid rgba(0, 0, 0, 0)
+
 .delighted
     text-align: center
-    img 
+    img
         display: block
         margin: 0 auto 40px
         max-width: 70%
 
-    ul 
+    ul
         font-size: 17px
         text-align: left
-        max-width: 510px 
-        margin: 0 auto 
-        li 
+        max-width: 510px
+        margin: 0 auto
+        li
             padding: 4px 0
 
 .transition
@@ -34,7 +85,7 @@
         display: block
         width: 20%
         position: absolute
-        top: 15%
+        top: 10%
         z-index: -1
         &.--right
             right: 0

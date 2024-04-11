@@ -1,3 +1,25 @@
+$('.space-slider').slick({
+    infinite: true,
+    dots: false,
+    slidesToShow: 1,
+    swipeToSlide: true,
+    centerMode: true,
+    centerPadding: '40px',
+    slidesToScroll: 1,
+    asNavFor: '.space-navs',
+});
+
+$('.space-navs').slick({
+    infinite: false,
+    dots: false,
+    arrows: false,
+    slidesToShow: 5,
+    swipeToSlide: true,
+    slidesToScroll: 1,
+    asNavFor: '.space-slider',
+    focusOnSelect: true
+
+});
 $('.classes-slider').slick({
     infinite: false,
     dots: true,
