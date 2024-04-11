@@ -5,24 +5,56 @@
 @import 'footer'
 
 .transition
-    display: none
+    text-align: center
+    .container
+        position: relative
+        z-index: 1
+
+    &__imgs
+        position: relative
+        z-index: -11
+        max-width: 40%
+
+    &__img
+        display: block
+        width: 20%
+        position: absolute
+        top: 15%
+        z-index: -1
+        &.--right
+            right: 0
+
+    p
+        max-width: 600px
+        margin: 0 auto 40px
+        font-size: 18px
+        line-height: 140%
+
+    .fx
+        img
+            width: 100%
+            display: block
+            max-width: 25%
+
+        p
+            margin: 0
 
 .freedom
-    .fx 
+    .fx
         margin-top: 60px
 
     .title
         width: 48%
 
-    p 
+    p
         font-size: 16px
         line-height: 160%
 
-    ul 
+    ul
         font-size: 15px
-        padding-top: 10px 
+        padding-top: 10px
         font-weight: bold
-        li 
+        li
             padding: 4px 0
 
     &__img
@@ -30,7 +62,7 @@
         object-fit: contain
         &.--second
             max-height: 300px
- 
+
 .classes
     overflow: hidden
     h2
