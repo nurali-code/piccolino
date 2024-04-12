@@ -7,7 +7,7 @@
     background-repeat: no-repeat
     background-position: center top -10px
     background-image: url('../img/main_bg.svg')
-    background-size: 2220px auto 
+    background-size: 2220px auto
     &-content
         padding: 100px 0
 
@@ -18,7 +18,11 @@
 
     p
         font-size: 23px
+        line-height: 130%
         margin: 0 0 100px
+        i
+            font-style: normal
+            white-space: nowrap
 
     h1
         color: #82976C
@@ -28,8 +32,9 @@
         margin: 0 0 10px
 
     &__img
-        transform-origin: 0 50%
         transform: scale(1.2)
+        @media screen and ( min-width: 1010px )
+            transform-origin: 0 50%
 
 .exploring
     text-align: center
@@ -371,3 +376,71 @@
                 opacity: 1
 
 @import 'footer'
+
+@media screen and ( max-width: 1010px )
+    .main
+        background-position: center top -15vw
+        background-size: 170vw auto
+        position: relative
+        z-index: 99
+        &-content
+            padding: 14vw 0
+            flex-direction: column
+            text-align: center
+            .btn_1
+                max-width: 400px 
+                margin: 0 auto 
+
+        h1
+            font-size: 13vw
+            margin: 0
+
+        p
+            font-size: 20px
+            max-width: 90%
+            margin: 0 auto 30px
+
+        .col
+            max-width: 100%
+            width: 100%
+            order: 2
+            &:last-of-type
+                order: 1
+                margin-bottom: 40px
+
+        
+
+        &__img
+            z-index: -1
+            position: relative
+            transform-origin: 20% 100%
+
+    .exploring
+        .fx 
+            display: block
+            margin-top: 20px
+            p 
+                font-weight: normal
+
+        &__img, .title 
+            width: 94%
+            padding: 0
+            margin: 0 auto 
+
+        &__img
+            margin-bottom: 20px
+            border-radius: 7vw
+
+        p 
+            margin: 0
+            
+    .space,
+    .delighted,
+    .transition,
+    .freedom,
+    .classes,
+    .why,
+    .partners,
+    .reviews,
+    .contacts
+        display: none

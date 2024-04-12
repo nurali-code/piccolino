@@ -7,13 +7,14 @@
         display: block
         color: #5b6375
         padding: 10px
-        &:first-child
-            padding-left: 0
-        &:last-child
-            padding-right: 0
-        &:hover
-            color: white
-            text-decoration: underline
+        @media screen and ( min-width: 1010px )
+            &:first-child
+                padding-left: 0
+            &:last-child
+                padding-right: 0
+            &:hover
+                color: white
+                text-decoration: underline
 
     &__phone
         color: #8a8f99
@@ -24,3 +25,17 @@
         &:hover
             color: white
             text-decoration: underline
+
+    @media screen and ( max-width: 1010px )
+        margin-top: 60px
+        &-nav, .container
+            flex-wrap: wrap
+            width: 100%
+
+        &__link 
+            width: 32%
+    
+    @media screen and ( max-width: 700px )
+        margin-top: 50px
+        &__link 
+            width: 49%
