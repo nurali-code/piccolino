@@ -72,7 +72,7 @@
     p
         max-width: 800px
         font-size: 16px
-        margin: 0 auto
+        margin: 0 auto 20px
 
     .slick
         &-arrow
@@ -87,7 +87,7 @@
         &-current
 
     &-slide
-        margin: 20px 40px 0
+        margin: 0 40px 
 
     &-slide, &-nav
         display: none
@@ -109,6 +109,7 @@
                 img
                     border-color: #ff9893
                     box-shadow: 0 0 20px 0 rgba(#ff9893, .6)
+    
     &-nav
         // display: inline-block
         margin: 20px 5px
@@ -434,7 +435,27 @@
         p 
             margin: 0
             
-    .space,
+    .space
+        h2, p 
+            padding: 0 15px
+
+        .container
+            padding: 0
+
+        &-slide 
+            margin: 0 20px
+            
+        .slick
+            &-arrow 
+                margin: 0
+                top: 50%
+
+            &-prev 
+                left: 10px
+
+            &-next 
+                right: 10px
+
     .delighted,
     .transition,
     .freedom,

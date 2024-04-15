@@ -7,6 +7,14 @@ $('.space-slider').slick({
     centerPadding: '40px',
     slidesToScroll: 1,
     asNavFor: '.space-navs',
+    responsive: [
+        {
+            breakpoint: 1010,
+            settings: {
+                centerPadding: '0px',
+            }
+        }
+    ]
 });
 
 $('.space-navs').slick({
@@ -17,8 +25,16 @@ $('.space-navs').slick({
     swipeToSlide: true,
     slidesToScroll: 1,
     asNavFor: '.space-slider',
-    focusOnSelect: true
-
+    focusOnSelect: true,
+    responsive: [
+        {
+            breakpoint: 1010,
+            settings: {
+                slidesToShow: 4,
+                centerPadding: '0px',
+            }
+        }
+    ]
 });
 $('.classes-slider').slick({
     infinite: false,
