@@ -1,3 +1,12 @@
+$('.btn__menu').on('click', function () {
+    $('.header-nav, .btn__menu, body').toggleClass('is_active');
+})
+
+$('.header__link').on('click', function () {
+    $('.header-nav, .btn__menu, body').removeClass('is_active');
+})
+
+
 $('.space-slider').slick({
     infinite: true,
     dots: false,

@@ -3,13 +3,14 @@
     &__link
         font-size: 16px
         display: block
-        padding: 10px
+        padding: 12px
         @media screen and ( min-width: 1010px )
             &:first-child
                 padding-left: 0
             &:last-child
                 padding-right: 0
             &:hover
+                font-weight: 600
                 text-decoration: underline
 
     &__phone
@@ -84,9 +85,7 @@
                     &::before
                         top: 0
                         transform: rotate(45deg)
-                        background-color: white
 
                     &::after
                         top: 0
                         transform: rotate(-45deg)
-                        background-color: white
