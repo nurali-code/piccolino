@@ -608,8 +608,23 @@
             width: 100%
             order: 2
 
-    .classes,
-    .why,
+    .classes
+        .slick
+            &-list
+                padding: 0 10px
+
+        &-slide 
+            margin: 0 10px 10px
+
+        h2
+            text-align: center
+            margin-bottom: 30px
+
+    .why
+        .item 
+            width: 49%
+        
+
     .partners,
     .reviews,
     .contacts
@@ -638,3 +653,17 @@
             img
                 max-width: 50%
                 // margin-top: 10px
+
+    .why
+        .container
+            padding: 0
+
+        h2 
+            padding: 0 15px
+
+        .slick
+            &-prev 
+                left: 10px
+
+            &-next 
+                right: 10px

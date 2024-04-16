@@ -36,14 +36,44 @@ $('.space-navs').slick({
         }
     ]
 });
+
 $('.classes-slider').slick({
     infinite: false,
+    adaptiveHeight: true,
     dots: true,
     slidesToShow: 3,
     swipeToSlide: true,
     variableWidth: true,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    responsive: [
+        {
+            breakpoint: 700,
+            settings: {
+                slidesToShow: 1,
+                centerPadding: '0px',
+                variableWidth: false,
+            }
+        }
+    ]
 });
+
+$('.why-slider').slick({
+    infinite: false,
+    adaptiveHeight: true,
+    dots: true,
+    slidesToShow: 1,
+    swipeToSlide: true,
+    slidesToScroll: 1,
+    mobileFirst: true,
+    responsive: [
+        {
+            breakpoint: 700,
+            settings: "unslick",
+
+        }
+    ]
+});
+
 $('.reviews-slider').slick({
     infinite: true,
     dots: true,
