@@ -80,7 +80,17 @@ $('.reviews-slider').slick({
     slidesToShow: 1,
     centerMode: true,
     variableWidth: true,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    responsive: [
+        {
+            breakpoint: 700,
+            settings: {
+                slidesToShow: 1,
+                centerPadding: '0px',
+                variableWidth: false,
+            }
+        }
+    ]
 });
 
 $('.dropdown-btn').on('click', function (e) {
