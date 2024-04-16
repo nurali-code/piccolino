@@ -629,7 +629,7 @@
         .container
             padding: 0
 
-        &__text 
+        &__text
             font-size: 16px
             margin-bottom: 20px
 
@@ -645,8 +645,19 @@
             &-next
                 right: 20px
 
+@media screen and ( max-width: 800px )
     .contacts
-        display: none
+        .container
+            max-width: 500px
+            display: block
+
+        .col, .form
+            width: 100%
+
+        .col
+            padding: 20px
+            img
+                max-height: 350px
 
 @media screen and ( max-width: 700px )
     .transition
@@ -700,3 +711,22 @@
 
         .col
             width: 100%
+
+    .contacts
+        .col
+            border-radius: 20px
+
+        .form
+            padding: 20px
+            margin-top: 20px
+            h2
+                margin-bottom: 20px
+
+        .type
+            img
+                width: 100%
+
+        .check
+            label
+                line-height: 130%
+                font-size: 12px
