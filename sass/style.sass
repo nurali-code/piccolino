@@ -212,8 +212,8 @@
     p
         font-size: 18px
         line-height: 140%
-        &.sm 
-            font-size: 16px 
+        &.sm
+            font-size: 16px
             font-weight: 400
 
     ul
@@ -410,23 +410,26 @@
         object-fit: contain
 
     .container
-        max-width: 1090px
+        max-width: 950px
         box-shadow: 0px 20px 50px 0px rgba(0,0,0,0.1)
         padding: 0
         overflow: hidden
         border-radius: 15px
-        align-items: stretch
+        align-items: center
 
     .col
         padding: 30px
         position: relative
         z-index: 11
         box-shadow: 0px 20px 50px 0px rgba(0,0,0,0.1)
-        width: 42%
+        width: 40%
 
     .form
-        width: 58%
-        padding: 60px
+        width: 60%
+        padding: 50px 40px 60px 60px
+
+    h2
+        margin-bottom: 10px
 
     .type
         width: 23.4%
@@ -459,16 +462,32 @@
             &:checked ~ img
                 opacity: 1
 
-    p 
+    &__text
         font-size: 22px
         line-height: 140%
-        margin-bottom: 10px
+        margin-bottom: 40px
 
-    &__phone 
+    &__phone
         font-size: 24px
-        padding: 10px 0
+        padding: 11px 0 9px 55px
         display: inline-block
         font-weight: 600
+        margin-bottom: 10px
+
+        background-repeat: no-repeat
+        background-position: center left
+        background-image: url('../img/phone.svg')
+        background-size: contain
+        &:hover
+            text-decoration: underline
+
+    &__descr
+        font-weight: 400
+        font-size: 18px
+        line-height: 140%
+        i
+            opacity: .6
+            font-style: normal
 
 // @import 'reviews'
 @import 'footer'
@@ -641,7 +660,12 @@
     .why
         .item
             width: 49%
-    
+
+    .contacts
+        &__text 
+            font-size: 18px
+            
+
 @media screen and ( max-width: 800px )
     .contacts
         .container
@@ -710,11 +734,12 @@
             width: 100%
 
     .contacts
+        padding-bottom: 50px
         .col
             border-radius: 20px
 
         .form
-            padding: 20px
+            padding: 30px 20px 40px
             margin-top: 20px
             h2
                 margin-bottom: 20px

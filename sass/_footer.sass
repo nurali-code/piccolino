@@ -16,13 +16,17 @@
                 color: white
                 text-decoration: underline
 
-    &__text 
+    &__text
         text-align: right
         color: rgba(#8a8f99, .6)
+        span
+            width: 66px
+            display: inline-block
+
     &__phone
         color: #8a8f99
         font-weight: 700
-        padding: 10px
+        padding: 5px
         font-size: 16px
         font-family: "Merriweather", serif
         &:hover
@@ -35,10 +39,24 @@
             flex-wrap: wrap
             width: 100%
 
-        &__link 
+        &__link
             width: 32%
-    
+
+        .col
+            width: 100%
+            margin-top: 20px
+            padding-top: 20px
+            border-top: 1px solid rgba(255, 255, 255, .1)
+            text-align: left
+            
+        &__text
+            align-items: center
+            text-align: left
+            display: flex
+            justify-content: flex-end
+            flex-direction: row-reverse
+
     @media screen and ( max-width: 700px )
         margin-top: 50px
-        &__link 
+        &__link
             width: 49%
