@@ -1,0 +1,51 @@
+
+.reviews
+    text-align: center
+    background-color: #faf0e5
+    h2
+        margin-bottom: 50px
+    &__text
+        font-size: 17px
+        margin: 0 auto 25px
+
+    &__heading
+        font-weight: 500
+        font-size: 22px
+
+    &-slide
+        max-width: 760px
+        margin: 0 5vw
+        opacity: 0
+
+    .slick
+        &-arrow
+            background-color: #fff
+        &-slide,
+        &-slide[aria-hidden="true"]:not(.slick-cloned) ~ .slick-cloned[aria-hidden="true"]
+            opacity: 0
+
+        &-center,
+        &-slide[aria-hidden="true"]:not([tabindex="-1"]) + .slick-cloned[aria-hidden="true"]
+            opacity: 1
+
+@media screen and ( max-width: 1010px )
+    .reviews
+        padding-bottom: 80px
+        .container
+            padding: 0
+
+        &__text
+            font-size: 16px
+            margin-bottom: 20px
+
+        .slick
+            &-arrow
+                bottom: 5px
+                top: auto
+                transform: none !important
+            &-prev
+                left: 20px
+                transform: scaleX(-1) !important
+
+            &-next
+                right: 20px
