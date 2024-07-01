@@ -23,8 +23,8 @@
         display: inline-block
 
     p
-        font-size: 23px
-        line-height: 130%
+        font-size: 22px
+        line-height: 136%
         margin: 0 0 60px
         i
             font-style: normal
@@ -502,16 +502,23 @@
     .col
         width: 50%
         align-items: stretch
+        &.fxw
+            position: relative
+            z-index: 111
 
     .item
+        padding: 10px
         text-align: center
-        width: 31%
-        aspect-ratio: 1/1
+        width: 100%
+        // aspect-ratio: 1/1
         margin-bottom: 20px
         background-color: #ffffff
         box-shadow: 0px 20px 50px 0px rgba(0,0,0,0.1)
         img
             display: block
+            max-width: 250px
+            max-height: 100px
+            object-fit: contain
             width: 60%
             margin: 0 auto
 
@@ -583,12 +590,10 @@
 
     &__phone
         font-size: 24px
-        padding: 9px 0 7px 50px
+        padding: 8px 0 7px 46px
         display: inline-block
         font-weight: 600
-        position: relative
-        left: -5px
-        margin-bottom: 10px
+        margin-bottom: 30px
 
         background-repeat: no-repeat
         background-position: center left
@@ -597,13 +602,14 @@
         &:hover
             text-decoration: underline
 
+        &:last-of-type
+            margin-bottom: 0
+
     &__descr
         font-weight: 400
-        font-size: 18px
+        font-size: 20px
         line-height: 140%
-        i
-            opacity: .6
-            font-style: normal
+        margin-bottom: 5px
 
 // @import 'reviews'
 @import 'footer'
@@ -643,7 +649,7 @@
         &__img
             z-index: -1
             position: relative
-            transform-origin: 20% 100%
+            transform-origin: 33% 100%
 
     .exploring
         .fx
@@ -797,10 +803,11 @@
                 max-height: 350px
 
 @media screen and ( max-width: 700px )
-    .main 
+    .main
         p
             font-size: 18px
             max-width: 100%
+
     .transition
         h2
             max-width: 380px
@@ -839,6 +846,8 @@
                 right: 10px
 
     .partners
+        overflow: hidden
+        padding-bottom: 0
         h2
             text-align: center
             margin-bottom: 20px
@@ -851,7 +860,18 @@
             display: block
 
         .col
-            width: 100%
+            width: 80%
+            margin: 0 auto
+            &:first-child
+                width: 100%
+                img
+                    transform-origin: 33% 100%
+                    transform: scale(1.1)
+                    position: relative
+                    top: 20px
+
+            &.fxw
+                top: -50px
 
     .contacts
         padding-bottom: 50px
