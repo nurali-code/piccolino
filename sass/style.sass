@@ -1,6 +1,7 @@
 @import 'normolize'
 @import 'elements'
 @import 'header'
+@import 'modal'
 
 .main
     overflow: hidden
@@ -198,24 +199,47 @@
         line-height: 140%
 
     .row
+        align-items: center
         display: flex
-        .col
-            width: 50%
+
+    .col
+        width: 50%
 
     .box
         width: 50%
         background-color: #fff
         border-radius: 20px
-        padding: 30px
-        &__heading 
+        padding: 30px 30px 40px
+        &__heading
             font-size: 24px
             margin-bottom: 10px
+
+        &-row
+            max-width: 400px
+            display: flex
+            align-items: center
+            justify-content: space-between
+
+        .footer__phone
+            padding: 5px 0
+            color: #000
+            span
+                display: block
+                color: #8a8f99
+
+            &:hover
+                color: #000
 
     &.--second
         text-align: left
         padding: 120px 0 150px
         .container
             // max-width: 900px
+
+        i
+            font-style: normal
+            white-space: nowrap
+
         h2
             text-align: center
             max-width: 100%
@@ -227,6 +251,52 @@
                 font-weight: 400
 
         .delighted
+
+    @media screen and ( max-width: 1000px )
+        &__text
+            font-size: 18px
+            max-width: 550px
+
+    @media screen and ( max-width: 870px )
+        &__text
+            margin-bottom: 30px
+
+        .row
+            display: block
+            max-width: 500px
+            margin: 0 auto
+
+        .col
+            margin-bottom: 40px
+        .box, .col
+            width: 100%
+
+    @media screen and ( max-width: 700px )
+        &__text
+            font-size: 16px
+
+        &__subheading
+            font-size: 15px
+
+        .box
+            padding: 30px 20px 35px
+            &-row
+                display: block
+
+            .footer__phone
+                display: block
+                text-align: left
+                font-size: 18px
+                margin-bottom: 5px
+                span
+                    margin-bottom: 4px
+
+        &.--second
+            padding: 110px 0 120px
+            ul
+                margin-bottom: 10px
+                li
+                    padding: 3px 0
 
 .transition
     text-align: center
@@ -513,9 +583,11 @@
 
     &__phone
         font-size: 24px
-        padding: 11px 0 9px 55px
+        padding: 9px 0 7px 50px
         display: inline-block
         font-weight: 600
+        position: relative
+        left: -5px
         margin-bottom: 10px
 
         background-repeat: no-repeat

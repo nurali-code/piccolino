@@ -1,11 +1,33 @@
-$('.btn__menu').on('click', function () {
-    $('.header-nav, .btn__menu, body').toggleClass('is_active');
-})
 
-$('.header__link').on('click', function () {
-    $('.header-nav, .btn__menu, body').removeClass('is_active');
-})
+$('.btn__menu').on('click', function () { $('.header-nav, .btn__menu, body').toggleClass('is_active'); })
+$('.header__link').on('click', function () { $('.header-nav, .btn__menu, body').removeClass('is_active'); })
 
+function hideModals() {
+    $('.modal').fadeOut();
+    $('body').removeClass('active');
+};
+
+$(function () {
+    function showModal(id) {
+        $('body').addClass('active');
+        $(id).addClass('active').fadeIn(300);
+    }
+    $('[data-modal]').on('click', function (e) {
+        e.preventDefault();
+        showModal('#' + $(this).attr("data-modal"));
+    });
+
+    $('.modal__close').on('click', () => { hideModals(); });
+    $(document).on('click', function (e) {
+        if (!(($(e.target).parents('.modal-content').length) ||
+            ($(e.target).parents('.btn_1').length) ||
+            ($(e.target).parents('.btn').length) ||
+            ($(e.target).hasClass('btn_1')) ||
+            ($(e.target).hasClass('btn')) ||
+            ($(e.target).hasClass('modal-content'))
+        )) { hideModals(); }
+    });
+});
 
 $('.space-slider').slick({
     infinite: true,
@@ -110,3 +132,4 @@ $('.dropdown-btn').on('click', function (e) {
     $(dParent).find('.dropdown-content').not($(dCont)).slideUp();
     $(this).next('.dropdown-content').slideDown();
 })
+
