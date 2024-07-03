@@ -2,6 +2,11 @@
     padding: 20px 0
     margin-top: 80px
     background-color: #202530
+    &-nav
+        width: 100%
+        justify-content: center
+        margin-bottom: 30px
+
     &__link
         font-size: 15px
         display: block
@@ -16,17 +21,34 @@
                 color: white
                 text-decoration: underline
 
+    &-bottom
+        justify-content: center
+
     &__text
-        text-align: right
+        align-items: center
+        text-align: left
         color: rgba(#8a8f99, .6)
+        &:last-of-type
+            margin-bottom: 0
+
         span
             width: 66px
-            display: inline-block
+            display: block
+
+    .fx-js
+        @media screen and ( min-width: 700px )
+            padding-right: 40px
+            margin-right: 40px
+            border-right: 1px solid rgba(white, .2)
+
+    .msg
+        width: 35px
+        height: 35px
 
     &__phone
         color: #8a8f99
         font-weight: 700
-        padding: 5px
+        padding: 5px 0
         font-size: 16px
         font-family: "Merriweather", serif
         &:hover
@@ -35,28 +57,21 @@
 
     @media screen and ( max-width: 1010px )
         margin-top: 60px
-        &-nav, .container
-            flex-wrap: wrap
-            width: 100%
+        &-nav
+            justify-content: flex-start
 
         &__link
             width: 32%
 
-        .col
-            width: 100%
-            margin-top: 20px
-            padding-top: 20px
-            border-top: 1px solid rgba(255, 255, 255, .1)
-            text-align: left
-            
         &__text
-            align-items: center
-            text-align: left
-            display: flex
-            justify-content: flex-end
-            flex-direction: row-reverse
 
     @media screen and ( max-width: 700px )
         margin-top: 50px
         &__link
             width: 49%
+        .col
+            width: 100%
+
+        &-bottom
+            justify-content: flex-start
+            gap: 20px

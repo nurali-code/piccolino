@@ -168,7 +168,7 @@
         max-width: 700px
         margin: 0 auto 40px
 
-    img
+    &__img
         display: block
         margin: 0 auto 40px
         border-radius: 10px
@@ -217,8 +217,13 @@
         &-row
             max-width: 400px
             display: flex
-            align-items: center
+            margin-top: 20px
+            align-items: flex-start
             justify-content: space-between
+
+        .fx-js
+            margin-top: 10px
+            display: flex !important
 
         .footer__phone
             padding: 5px 0
@@ -228,7 +233,9 @@
                 color: #8a8f99
 
             &:hover
+                text-decoration: none
                 color: #000
+
 
     &.--second
         text-align: left
@@ -593,7 +600,6 @@
         padding: 8px 0 7px 46px
         display: inline-block
         font-weight: 600
-        margin-bottom: 30px
 
         background-repeat: no-repeat
         background-position: center left
@@ -604,6 +610,11 @@
 
         &:last-of-type
             margin-bottom: 0
+
+    
+    .fx-js
+        gap: 10px
+        margin-bottom: 10px
 
     &__descr
         font-weight: 400
@@ -693,7 +704,7 @@
 
     .delighted
         padding: 100px 0
-        img
+        &__img
             max-width: 500px
             width: 100vw
             position: relative

@@ -10,10 +10,10 @@
 		content="Пикколино - детское пространство для детей от 3 до 7 лет, созданное заботливыми родителями. Радоваться, играть и обустраивать мир вокруг!">
 	<meta name="keywords"
 		content="детское пространство, интересы, увлечения, дети, игры, творчество, исследование, развитие, свобода выбора">
-	<meta name="robots" content="index, nofollow">
+	<meta name="robots" content="index, follow">
 	<link rel="canonical" href="https://piccolino.me/">
 	<title>Пикколино - Детское пространство интересов и увлечений</title>
-	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/style.css?ver=123">
 	<link
 		href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
 		rel="stylesheet">
@@ -29,7 +29,7 @@
 					<a class="header__link" href="#transition">Переход </a>
 					<a class="header__link" href="#freedom">Свобода </a>
 					<a class="header__link" href="#classes">Занятия</a>
-					<a class="header__link" href="#why">Почему мы?</a>
+					<!-- <a class="header__link" href="#why">Почему мы?</a> -->
 					<a class="header__link" href="#questions">Вопросы</a>
 					<!-- <a class="header__link" href="#reviews">Отзывы</a> -->
 					<a class="header__link" href="#contacts">Контакты</a>
@@ -38,6 +38,10 @@
 					<a href="tel:89264062441" class="header__phone">8(926)406-24-41</a>
 					<a href="tel:89253473670" class="header__phone">8(925)347-36-70</a>
 				</p>
+				<span class="fx-js">
+					<a href="https://wa.me/+79264062441" target="_blank" class="msg"><img src="img/whatsapp.svg" alt="i"></a>
+					<a href="https://t.me/+79264062441" class="msg"><img src="img/telegram.svg" alt="i"></a>
+				</span>
 				<button class="btn__menu"><span></span></button>
 			</header>
 
@@ -120,7 +124,7 @@
 	<section class="delighted" id="delighted">
 		<div class="container">
 			<h2>Дети в восторге и не хотят расставаться <i>с друзьями</i> <i>и Пикколино</i></h2>
-			<img src="img/delighted.jpg" alt="i" loading="lazy">
+			<img src="img/delighted.jpg" class="delighted__img" alt="i" loading="lazy">
 			<h3 class="h2">Как у нас это получается:</h3>
 			<ul>
 				<li>3 часа на воздухе у леса - прогулки и подвижные игры</li>
@@ -308,19 +312,21 @@
 					<p class="delighted__subheading">Ну и конечно, веселые игры и конкурсы )</p>
 				</div>
 				<div class="box">
-					<h3 class="box__heading">Стоимость участия</h3>
+					<h3 class="box__heading">Участие БЕСПЛАТНО</h3>
 					<p>
-						3500 рублей за ребенка, родители бесплатно)
-						количество мест ограничено, поэтому очень просим записаться <i>заранее :)</i>
+						По предварительной записи.
 						<br>
-						<br>
-						Пишите, звоните, записывайтесь по телефону: <br>
+						Количество мест ограничено.
 					</p>
 					<div class="box-row">
-						<a href="tel:89264062441" class="footer__phone">
+						<p class="footer__phone">
 							<span>Валерий</span>
-							8(926)406-24-41
-						</a>
+							<a href="tel:89264062441" class="footer__phone">8(926)406-24-41</a>
+							<span class="fx-js">
+								<a href="https://wa.me/+79264062441" target="_blank" class="msg"><img src="img/whatsapp.svg" alt="i"></a>
+								<a href="https://t.me/+79264062441" target="_blank" class="msg"><img src="img/telegram.svg" alt="i"></a>
+							</span>
+						</p>
 						<a href="tel:89253473670" class="footer__phone">
 							<span>Наталья</span>
 							8(925)347-36-70
@@ -542,47 +548,22 @@
 			<div class="form">
 				<h2>Остались вопросы?</h2>
 				<p class="contacts__text">Пишите, звоните, мы рады <br> Вашему обращению :)</p>
-				<p class="contacts__descr">Валерий</p>
+				<p class="fx-js">
+					<span class="contacts__descr">Валерий</span>
+					<a href="https://wa.me/+79264062441" target="_blank" class="msg"><img src="img/whatsapp.svg" alt="i"></a>
+					<a href="https://t.me/+79264062441" target="_blank" class="msg"><img src="img/telegram.svg" alt="i"></a>
+				</p>
 				<a class="contacts__phone" href="tel:89264062441">8(926)406-24-41</a>
+				<hr>
 				<p class="contacts__descr">Наталья</p>
 				<a class="contacts__phone" href="tel:89253473670">8(925)347-36-70</a>
-				<!-- <form action="#">
-					<input type="text" required placeholder="Имя">
-					<input type="tel" required placeholder="+7">
-					<input type="email" placeholder="E-mail">
-					<textarea rows="4" placeholder="Текст вопроса"></textarea>
-					<div class="fx">
-						<label class="type">
-							<input type="radio" name="type" value="phone">
-							<img src="img/phone.svg" alt="i">
-						</label>
-						<label class="type">
-							<input type="radio" name="type" value="phone">
-							<img src="img/whatsapp.svg" alt="i">
-						</label>
-						<label class="type">
-							<input type="radio" name="type" value="phone">
-							<img src="img/telegram.svg" alt="i">
-						</label>
-						<label class="type">
-							<input type="radio" name="type" value="phone">
-							<img src="img/email.svg" alt="i">
-						</label>
-					</div>
-					<div class="check">
-						<input type="checkbox" id="check" required checked>
-						<label for="check">Даю согласие на обработку персональных данных в соответствии с политикой
-							конфиденциальности</label>
-					</div>
-					<button type="submit" class="btn">Задать вопрос</button>
-				</form> -->
 			</div>
 		</div>
 	</section>
 
 	<footer class="footer">
-		<div class="container fx">
-			<nav class="footer-nav fx">
+		<div class="container">
+			<nav class="footer-nav fxw">
 				<a class="footer__link" href="#">О садике</a>
 				<a class="footer__link" href="#">Концепция</a>
 				<a class="footer__link" href="#">Занятия</a>
@@ -593,14 +574,19 @@
 				<!-- <a class="footer__link" href="#">Отзывы</a> -->
 				<a class="footer__link" href="#contacts">Контакты</a>
 			</nav>
-			<div class="col">
+			<div class="footer-bottom fxw">
+				<div class="col fx-js">
+					<p class="footer__text">
+						<span>Валерий</span>
+						<a href="tel:89264062441" class="footer__phone">8(926)406-24-41</a>
+					</p>
+					<a href="https://wa.me/+79264062441" target="_blank" class="msg"><img src="img/whatsapp.svg" alt="i"></a>
+					<a href="https://t.me/+79264062441" target="_blank" class="msg"><img src="img/telegram.svg" alt="i"></a>
+				</div>
 				<p class="footer__text">
-					<a href="tel:89264062441" class="footer__phone">8(926)406-24-41</a> <span>Валерий</span>
+					<span>Наталья</span>
+					<a href="tel:89253473670" class="footer__phone">8(925)347-36-70</a>
 				</p>
-				<p class="footer__text">
-					<a href="tel:89253473670" class="footer__phone">8(925)347-36-70</a> <span>Наталья</span>
-				</p>
-
 			</div>
 		</div>
 	</footer>
@@ -608,8 +594,13 @@
 	<section class="modal" id="call">
 		<div class="modal-content">
 			<button class="modal__close">&times;</button>
-			<p class="contacts__descr">Валерий</p>
+			<p class="fx-js">
+				<span class="contacts__descr">Валерий</span>
+				<a href="https://wa.me/+79264062441" target="_blank" class="msg"><img src="img/whatsapp.svg" alt="i"></a>
+				<a href="https://t.me/+79264062441" target="_blank" class="msg"><img src="img/telegram.svg" alt="i"></a>
+			</p>
 			<a class="contacts__phone" href="tel:89264062441">8(926)406-24-41</a>
+			<hr>
 			<p class="contacts__descr">Наталья</p>
 			<a class="contacts__phone" href="tel:89253473670">8(925)347-36-70</a>
 		</div>
